@@ -1,31 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ryu.styledpage</title>
-    <link rel = "stylesheet" href = "mystyle.css">
     <style>
         body {
             padding-left: 11em ;
-            font-family: Georgia, 'Times New Roman', Times, serif ;
-            color: purple ;
+            font-family: Georgia, 'Times New Roman', Times, serif ;/*設定字形*/
+            color: rgb(180, 243, 79) ;
             background-image:url('gradientBlue.png');
             background-repeat: no-repeat;
             background-size:cover;
             
+        }
+        h1 {
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: royalblue;
         }
         ul.navbar {  
             list-style-type: none;
             padding: 0 ;
             margin: 0 ;
             position : absolute ;
-            top : 2em ;
+            top : 5em ;
             left : 1em ;
             width : 9em ;
-        }
-        h1 {
-            font-family: Helvetica, Geneva, Arial,SunSans-Regular, sans-serif ;
         }
         ul.navbar li {
             background: white ;
@@ -34,7 +32,7 @@
             border-right :1em solid black ;
         }
         ul.navbar a {
-            text-decoration :none ;
+            text-decoration :none ;/*修飾線，例如刪除線、底限*/
         }
         a:link {
             color : blue ;
@@ -55,7 +53,7 @@
     </style>
 </head>
 <body>
-    <!ryu>
+    <!--ryu-->
     <ul class="navbar">
         <li><a href = "index.html">Home page</a>
         <li><a href = "musings.html">Musings</a>
