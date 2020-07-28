@@ -27,8 +27,13 @@
 	    width: 1600px;
 	    height: 168px;
 	    background-image: url('cloud.jpg');
-	    background-repeat: repeat-x;
-}
+        background-repeat: repeat-x;
+        -webkit-animation: rollImage linear 12s infinite;/*only chrome can run*/
+        }
+        @-webkit-keyframes rollImage {
+	    from { right: 0px; }
+	    to { right: 300px; }
+        }
        
 
     </style>
